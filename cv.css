@@ -1,20 +1,50 @@
+body{
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+*{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 ul {
     list-style-type: none;
 }
 
 /*#region Header*/
 header{
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+	background-color: rgb(41, 74, 75);
+	padding-bottom: 30px;
+	color: white;
+	border-radius: 15px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+header img{
+	border-radius: 10000px;
 }
 /*#endregion Header*/
 
 /*#region Presentation*/
+.presentation{
+	display: flex;
+	flex-flow: column;
+}
 .presentation .social-media{
-	margin-left: 31%;
-	margin-right: 50%;
 	display: flex;
 	flex-flow: row;
-	justify-content: space-around;
+	justify-content: center;
+	padding: 0;
+}
+.presentation .social-media li{
+	padding: 5px;
+}
+.presentation-text p{
+	margin: 25px;
 }
 /*#endregion Presentation*/
 
@@ -29,8 +59,7 @@ header{
 }
 
 .experience h2{
-	grid-column: 1 / 2;
-	align-self: center;
+	justify-self: center;
 }
 
 .experience ul{
@@ -100,6 +129,10 @@ header{
 	margin-top: 3px;
 }
 
+.experience li p a{
+	padding: 0px;
+}
+
 .experience li.left h3 {
 	margin: 0px;
 	padding: 9px;
@@ -119,7 +152,8 @@ header{
 
 /*#region Projects*/
 .projects{
-	background-color: wheat;
+	background-color: lightgrey;
+	border-radius: .4em;
 }
 
 .projects h2{
@@ -136,7 +170,8 @@ header{
 	margin-right: 10px;
 	padding-top: 5px;
 	padding-bottom: 10px;
-	background-color: blanchedalmond;
+	background-color: rgb(247, 247, 247);
+	border-radius: .4em;
 }
 
 .project-highlights li p{
@@ -147,3 +182,14 @@ a{
 	padding: 0%;
 }
 /*#endregion Projects*/
+
+/*#region footer*/
+footer{
+	display: flex;
+	justify-content: space-around;
+	background-color:rgb(41, 74, 75);
+	color: white;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+/*#endregion footer*/
