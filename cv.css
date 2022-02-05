@@ -21,6 +21,7 @@ header{
 	border-radius: 15px;
 	margin-left: 100px;
 	margin-right: 100px;
+	font-size: medium;
 }
 
 header img{
@@ -41,6 +42,7 @@ header img{
 	header{
 		flex-flow: column;
 		align-items: center;
+		font-size: calc(10px +1.5vw);
 	}
 }
 
@@ -48,8 +50,7 @@ header img{
 
 /*#region Presentation*/
 .presentation{
-	display: flex;
-	flex-flow: column;
+	display: grid;
 }
 .presentation .social-media{
 	display: flex;
@@ -65,6 +66,7 @@ header img{
 }
 /*#endregion Presentation*/
 
+/*#region resume-details*/
 .resume-details{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -75,6 +77,7 @@ header img{
 		grid-template-columns: 1fr;
 	}
 }
+/*#region resume-details*/
 
 /*#region Experience-Block*/
 .experience{
