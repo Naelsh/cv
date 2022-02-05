@@ -254,10 +254,4 @@ footer{
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 }
-
-@media (max-width:900px){
-	footer{
-		flex-flow: column;
-	}
-}
 /*#endregion footer*/
