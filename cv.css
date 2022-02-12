@@ -1,9 +1,6 @@
 body{
 	margin-left: 60px;
 	margin-right: 60px;
-}
-
-body{
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -24,12 +21,12 @@ header{
 	font-size: medium;
 }
 
-header img{
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-	border-radius: 10000px;
-}
+	header img{
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-radius: 10000px;
+	}
 
 .biography{
 	display: flex;
@@ -52,18 +49,26 @@ header img{
 .presentation{
 	display: grid;
 }
-.presentation .social-media{
-	display: flex;
-	flex-flow: row;
-	justify-content: center;
-	padding: 0;
-}
-.presentation .social-media li{
-	padding: 5px;
-}
-.presentation-text p{
-	margin: 25px;
-}
+
+	.presentation .social-media{
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		padding: 0;
+	}
+	
+		.presentation .social-media li{
+			padding: 5px;
+		}
+
+			.presentation .social-media li a img{
+				width: 30px;
+				height: auto;
+			}
+
+	.presentation-text p{
+		margin: 25px;
+	}
 /*#endregion Presentation*/
 
 /*#region resume-details*/
@@ -84,18 +89,48 @@ header img{
 	display: grid;
 }
 
-.experience h2{
-	justify-self: center;
-}
+	.experience h2{
+		justify-self: center;
+	}
 
-.experience ul{
-    display: grid;
-    grid-template-columns: 10fr 5px 10fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 10px;
-	padding-right: 40px;
-}
+	.experience ul{
+		display: grid;
+		grid-template-columns: 10fr 5px 10fr;
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 50px;
+		grid-row-gap: 10px;
+		padding-right: 40px;
+	}
+
+	.experience li * {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+		.experience li h4{
+			margin-bottom: 3px;
+			margin-top: 3px;
+		}
+		
+		.experience li p a{
+			padding: 0px;
+		}
+	
+	.experience li.left h3 {
+		margin: 0px;
+		padding: 9px;
+		border-top-left-radius: .4em;
+		background-color:black;
+		color: white;
+	}
+	
+	.experience li.right h3 {
+		margin: 0px;
+		padding: 9px;
+		border-top-right-radius: .4em;
+		background-color:black;
+		color: white;
+	}
 
 .experience-block{
     position: relative;
@@ -145,36 +180,6 @@ header img{
     grid-row-start: span 3;
 }
 
-.experience li * {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.experience li h4{
-	margin-bottom: 3px;
-	margin-top: 3px;
-}
-
-.experience li p a{
-	padding: 0px;
-}
-
-.experience li.left h3 {
-	margin: 0px;
-	padding: 9px;
-	border-top-left-radius: .4em;
-	background-color:black;
-	color: white;
-}
-
-.experience li.right h3 {
-	margin: 0px;
-	padding: 9px;
-	border-top-right-radius: .4em;
-	background-color:black;
-	color: white;
-}
-
 @media (max-width: 1200px){
 	.experience .line{
 		display: none;
@@ -218,13 +223,13 @@ header img{
 	margin-bottom: 10px;
 }
 
-.projects h2{
-	padding-left: 15px;
-}
+	.projects h2{
+		padding-left: 15px;
+	}
 
-.projects ul{
-	padding-left: 15px;
-}
+	.projects ul{
+		padding-left: 15px;
+	}
 
 .project-highlights li{
 	padding-left: 15px;
@@ -236,9 +241,9 @@ header img{
 	border-radius: .4em;
 }
 
-.project-highlights li p{
-	margin-inline-end: 10px;
-}
+	.project-highlights li p{
+		margin-inline-end: 10px;
+	}
 
 a{
 	padding: 0%;
